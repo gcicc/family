@@ -1,0 +1,16 @@
+{
+  "network": "Family Shelf",
+  "home": "https://gcicc.github.io/family/",
+  "sites": [
+    {"id": "dads80th", "name": "This Is Your Life, Vic", "url": "https://gcicc.github.io/dads80th/",
+     "purpose": "Dad's 80th birthday biography", "live": false, "gated": false,
+     "note": "Offline: repo private, Pages off. Greg will revisit and upgrade it; flip live to true when it serves 200."},
+    {"id": "foxy-females", "name": "Uncle Frankie's FOXy Females", "url": "https://gcicc.github.io/foxy-females/",
+     "purpose": "Trading-card fan site for Uncle Frankie", "live": true, "gated": false},
+    {"id": "trump-corpus", "name": "Trump: In His Own Words", "url": "https://gcicc.github.io/trump-corpus/",
+     "purpose": "Archive of public messaging, for family reading", "live": true, "gated": false},
+    {"id": "bristol", "name": "Bristol", "url": "https://bristol-family.pages.dev/",
+     "purpose": "3D model of Bristol, PA", "live": true, "gated": true,
+     "note": "Behind Cloudflare Access; a visitor gets in only once their email is on the Family policy allow-list."}
+  ]
+}
