@@ -38,3 +38,13 @@ docs/                what the gcicc/family Pages repo serves (generated, do not 
   `include-in-header` in `_quarto.yml`), flip `live: true`, rebuild, publish.
 - **bristol:** the link is shown now, but family get in only once their emails are on the
   Cloudflare Access "Family" policy (parked item in `02-Areas/bristol/bristol-model/next-steps.md`).
+
+## More from the author (`docs/more/`)
+
+The one stable address for everything Greg makes for the family:
+https://gcicc.github.io/family/more/. Printed cards and booklets carry a QR to this page
+rather than to individual links, so a link that moves is fixed in `family.json`, never by
+reprinting. Built from the `author` block in `family.json`: each item has `name`, `kind`,
+`url`, `blurb` and `section` (`new` for this season, `also` for the rest). An item with an
+empty `url` is held back until its link exists. Each season, re-sort the `section` values.
+Never change the slug: it is printed on paper.

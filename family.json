@@ -45,66 +45,79 @@
       "note": "Behind Cloudflare Access; a visitor gets in only once their email is on the Family policy allow-list."
     }
   ],
-  "holiday": {
-    "slug": "holiday-2026",
-    "title": "Holiday 2026",
-    "greeting": "Everything Greg made this year, in one place. Tap anything to open it.",
+  "author": {
+    "slug": "more",
+    "title": "More from the author",
+    "greeting": "Everything I've made for the family, in one place. Tap anything to open it.",
+    "sections": {
+      "new": "New for the 2026 holidays",
+      "also": "Also here"
+    },
     "items": [
       {
         "name": "Lullabyes for Old People",
         "kind": "Playlist",
         "url": "https://www.youtube.com/playlist?list=PLEK5PYkjYcf0",
-        "blurb": "The whole songbook, sung, in book order."
+        "blurb": "The whole songbook, sung, in book order.",
+        "section": "new"
       },
       {
         "name": "The 2026 Annual Reading",
         "kind": "Playlist",
         "url": "https://www.youtube.com/playlist?list=PLQl43MiXghmU",
-        "blurb": "This year's reading of the family classic."
+        "blurb": "This year's reading of the family classic.",
+        "section": "new"
       },
       {
         "name": "Dueling Piano for Beginners",
         "kind": "PDF",
         "url": "",
         "blurb": "Five songbooks of chord charts, all five volumes.",
-        "note": "Paste Greg's anyone-with-link Dropbox link to the share/ folder."
+        "note": "Paste Greg's anyone-with-link Dropbox link to the share/ folder.",
+        "section": "new"
       },
       {
         "name": "Focaccia Art",
         "kind": "PDF",
         "url": "",
         "blurb": "The recipe, the variations, and a gallery of bread you could hang on a wall.",
-        "note": "Paste Greg's anyone-with-link Dropbox link to share/Focaccia Art.pdf."
+        "note": "Paste Greg's anyone-with-link Dropbox link to share/Focaccia Art.pdf.",
+        "section": "new"
       },
       {
         "name": "Uncle Frankie's FOXy Females",
         "kind": "Website",
         "url": "https://gcicc.github.io/foxy-females/",
-        "blurb": "Trading-card fan site for Uncle Frankie."
+        "blurb": "Trading-card fan site for Uncle Frankie.",
+        "section": "also"
       },
       {
         "name": "Breath and Elements",
         "kind": "Website",
         "url": "https://gcicc.github.io/breath-and-elements/",
-        "blurb": "Breath, the four elements and yoga, one card at a time."
+        "blurb": "Breath, the four elements and yoga, one card at a time.",
+        "section": "new"
       },
       {
         "name": "Keystone apps",
         "kind": "Website",
         "url": "https://gcicc.github.io/keystone-apps/",
-        "blurb": "Phone apps to help you flourish: habits, breath, focus."
+        "blurb": "Phone apps to help you flourish: habits, breath, focus.",
+        "section": "also"
       },
       {
         "name": "Trump: In His Own Words",
         "kind": "Website",
         "url": "https://gcicc.github.io/trump-corpus/",
-        "blurb": "An archive of public messaging, for family reading."
+        "blurb": "An archive of public messaging, for family reading.",
+        "section": "also"
       },
       {
         "name": "Bristol",
         "kind": "Website",
         "url": "https://bristol-family.pages.dev/",
-        "blurb": "A 3D model of Bristol, PA. Family sign-in required."
+        "blurb": "A 3D model of Bristol, PA. Family sign-in required.",
+        "section": "also"
       }
     ]
   }
