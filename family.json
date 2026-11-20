@@ -135,7 +135,7 @@
     ]
   },
   "bristol_preview": {
-    "access_email": "",
+    "access_email": "bugscicconetti@gmail.com",
     "note": "Address the Apply for residency buttons email. Empty = the page is not built. Applicants get added to the Cloudflare Access Family policy by hand; reply text in src/bristol/ACCESS-REPLY.md."
   }
 }
