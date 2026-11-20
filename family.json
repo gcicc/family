@@ -47,8 +47,21 @@
   ],
   "author": {
     "slug": "more",
-    "title": "More from the author",
-    "greeting": "Everything I've made for the family, in one place. Tap anything to open it.",
+    "title": "About the author",
+    "greeting": "Everything he has made for the family, in one place. Tap anything to open it.",
+    "bio": "corny",
+    "bios": {
+      "corny": [
+        "Greg is a statistician who has spent more than twenty years measuring whether things work. He now applies the same rigor to whether people fall asleep, whether his brother will ever play the piano, and whether focaccia counts as art.",
+        "His collected works include a six-book songbook oeuvre, an Annual Family Reading whose archival record remains disputed, a trading-card investigation, a breathing app with a job application inside it, and a 3D model of a small town on the Delaware.",
+        "He continues his research program in pure and applied gaslighting. Readers are reminded that they have always enjoyed his work.",
+        "He is available for birthdays, anniversaries and long car rides, and accepts payment in pizza."
+      ],
+      "professional": [
+        "Greg is a biostatistician with more than twenty years in clinical drug development, where he leads the design and analysis of clinical trials.",
+        "Outside work he builds small, carefully made things for his family: printed songbooks, recorded readings, phone apps for habits and breathing, and an interactive 3D model of a Pennsylvania river town. This page collects them."
+      ]
+    },
     "sections": {
       "new": "New for the 2026 holidays",
       "also": "Also here"

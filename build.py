@@ -95,7 +95,9 @@ body{margin:0;padding:28px 16px 48px;background:var(--bg);color:var(--ink);
   font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:560px;margin:0 auto}
 h1{margin:0 0 4px;color:var(--gold);font:600 32px/1.15 Georgia,"Times New Roman",serif}
-.lede{margin:0 0 24px;color:var(--soft)}
+.bio{margin:14px 0 22px;padding:0 0 18px;border-bottom:1px solid #3a332b}
+.bio p{margin:0 0 12px;font:17px/1.6 Georgia,"Times New Roman",serif}
+.lede{margin:0 0 8px;color:var(--soft)}
 h2{margin:28px 0 12px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);font-weight:600}
 a.tile{display:block;margin:0 0 12px;padding:14px 16px;background:var(--card);border-radius:12px;
   border-left:4px solid var(--red);color:var(--ink);text-decoration:none}
@@ -128,6 +130,8 @@ def build_author(reg: dict, home: str) -> tuple[int, list[str]]:
         items = [tile(i) for i in ready if i["section"] == key]
         if items:
             blocks.append(f"<h2>{html.escape(heading)}</h2>\n" + "\n".join(items))
+    # "bio" picks which of "bios" is shown; switch it in family.json, rebuild, publish
+    bio = "".join(f"<p>{html.escape(t)}</p>" for t in page["bios"][page["bio"]])
     out = DIST / page["slug"]
     out.mkdir(exist_ok=True)
     (out / "index.html").write_text(
@@ -138,6 +142,7 @@ def build_author(reg: dict, home: str) -> tuple[int, list[str]]:
 <style>{AUTHOR_CSS}</style></head>
 <body><main>
 <h1>{html.escape(page["title"])}</h1>
+<section class="bio">{bio}</section>
 <p class="lede">{html.escape(page["greeting"])}</p>
 {chr(10).join(blocks)}
 <footer>Part of the <a href="{html.escape(home)}">{html.escape(reg["network"])}</a>.</footer>
