@@ -48,3 +48,12 @@ reprinting. Built from the `author` block in `family.json`: each item has `name`
 `url`, `blurb` and `section` (`new` for this season, `also` for the rest). An item with an
 empty `url` is held back until its link exists. Each season, re-sort the `section` values.
 Never change the slug: it is printed on paper.
+
+## Bristol residency brochure (`docs/bristol/`)
+
+Public front door for the gated Bristol model: https://gcicc.github.io/family/bristol/.
+Source in `src/bristol/` (page + screenshots); `build.py` copies it to `docs/bristol/` and fills
+the Apply buttons with `bristol_preview.access_email` from `family.json` (CORTEX Gmail). No
+address, no page. Approving an applicant: add their email to the Cloudflare Access "Family"
+policy, then reply with `src/bristol/ACCESS-REPLY.md` (not copied to docs). The page names
+no one and leaves out the unit number and the viewshed report.
