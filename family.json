@@ -126,12 +126,16 @@
         "section": "also"
       },
       {
-        "name": "Bristol",
+        "name": "Radcliffe Court: Virtual Multi-Generational Family Living",
         "kind": "Website",
-        "url": "https://bristol-family.pages.dev/",
-        "blurb": "A 3D model of Bristol, PA. Family sign-in required.",
-        "section": "also"
+        "url": "https://gcicc.github.io/family/bristol/",
+        "blurb": "A 3D model of Bristol, PA you can walk, drive, fly and ride through. Apply for residency inside.",
+        "section": "new"
       }
     ]
+  },
+  "bristol_preview": {
+    "access_email": "",
+    "note": "Address the Apply for residency buttons email. Empty = the page is not built. Applicants get added to the Cloudflare Access Family policy by hand; reply text in src/bristol/ACCESS-REPLY.md."
   }
 }

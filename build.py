@@ -7,6 +7,9 @@ docs/ is what the gcicc/family Pages repo serves: family-nav.js (registry inline
 index.html (a plain list of the sites) and, if family.json has an "author" block,
 docs/<slug>/index.html: the "More from the author" page, the one stable address every
 card and booklet links to. Items with an empty url are held back.
+If family.json has a "bristol_preview" block with an access_email, src/bristol/ (the public
+"virtual multi-generational living" brochure for the gated Bristol model) is copied to
+docs/bristol/ with that address filled into its Apply buttons.
 """
 
 from __future__ import annotations
@@ -14,6 +17,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import shutil
 import sys
 from pathlib import Path
 
@@ -153,6 +157,22 @@ def build_author(reg: dict, home: str) -> tuple[int, list[str]]:
     return len(ready), waiting
 
 
+def build_bristol_preview(reg: dict) -> str:
+    """Copy src/bristol/ to docs/bristol/, filling in the access email. Returns a status line."""
+    email = reg.get("bristol_preview", {}).get("access_email", "")
+    if not email:
+        return "bristol preview held back: no bristol_preview.access_email in family.json"
+    out = DIST / "bristol"
+    if out.exists():
+        shutil.rmtree(out)
+    shutil.copytree(ROOT / "src" / "bristol", out, ignore=shutil.ignore_patterns("*.md"))
+    page = out / "index.html"
+    page.write_text(
+        page.read_text(encoding="utf-8").replace("__ACCESS_EMAIL__", email), encoding="utf-8"
+    )
+    return "wrote docs/bristol/ - access requests go to the configured address"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
@@ -173,6 +193,7 @@ def main() -> int:
             print(f"wrote docs/{reg['author']['slug']}/ - {n} links")
             for name in waiting:
                 print(f"  waiting for a url: {name}")
+        print(build_bristol_preview(reg))
     return 0
 
 
