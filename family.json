@@ -9,6 +9,8 @@
      "purpose": "Trading-card fan site for Uncle Frankie", "live": true, "gated": false},
     {"id": "trump-corpus", "name": "Trump: In His Own Words", "url": "https://gcicc.github.io/trump-corpus/",
      "purpose": "Archive of public messaging, for family reading", "live": true, "gated": false},
+    {"id": "breath-and-elements", "name": "Breath and Elements", "url": "https://gcicc.github.io/breath-and-elements/",
+     "purpose": "Breath, the four elements and the roots of yoga, one card at a time", "live": true, "gated": false},
     {"id": "bristol", "name": "Bristol", "url": "https://bristol-family.pages.dev/",
      "purpose": "3D model of Bristol, PA", "live": true, "gated": true,
      "note": "Behind Cloudflare Access; a visitor gets in only once their email is on the Family policy allow-list."}
